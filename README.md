@@ -49,7 +49,7 @@ Form.buildForm(formInputs);
 ```
 
 ### Examples
-#### Input Object
+#### Checkbox Object
 ```
 {
     type:'checkbox',
@@ -57,22 +57,22 @@ Form.buildForm(formInputs);
     value:'Understand the terms',
 }
 ```
-### HTML Output
+#### HTML Output
 ```
 <input type=checkbox value=Understand the terms></input>
 ```
-#### Input Object
+#### Submit Object
 ```
 {
   type:'submit',
   value:'Submit',
 }
 ```
-### HTML Output
+#### HTML Output
 ```
 <input type=submit value=Submit>Submit</input>
 ```
-#### Input Object
+#### Radio Object
 ```
 {
    type: 'radio',
@@ -80,11 +80,11 @@ Form.buildForm(formInputs);
    value: 'Yes',
 }
 ```
-### HTML Output
+#### HTML Output
 ```
 <input type=radio name=radio button value=Yes></input>
 ```
-#### Input Object
+#### Select Object
 ```
 {
    type: 'select',
@@ -92,10 +92,55 @@ Form.buildForm(formInputs);
    options: ['Red','Blue','Green'],
 }
 ```
-### HTML Output
+#### HTML Output
 ```
 <select value="Choose:">Choose:
 <option value=Red></option>
 <option value=Blue></option>
 <option value=Green></option>
 </select>
+```
+#### Text Object
+```
+{
+    type:'text',
+    name:'name',
+}
+```
+#### HTML Output
+```
+<input type=text name=name></input>
+```
+#### Button Object
+```
+{
+  type:'button',
+  value:'Click Here',
+}
+```
+#### HTML Output
+```
+<input type=button value=Click Here>Click Here</input>
+```
+#### Email Object
+```
+{
+   type: 'email',
+   name:'email',
+}
+```
+#### HTML Output
+```
+<input type=email name=email></input>
+```
+#### Password Object
+```
+{
+   type:'password',
+   name:"password",
+}
+```
+#### HTML Output
+```
+<input type=password name=password></input>
+```
