@@ -7,12 +7,12 @@ buildForm: function(formItems){
   let formInput='';
   //looping through all of the items in the array to create the form
   formItems.forEach((items)=>{
-    //verifying that ther is a type for each of the items if not an error will be thrown
+    //verifying that there is a type for each of the items if not an error will be thrown
     if(items.type){
       //checking the types
       switch (items.type){
         case 'select':
-          formInput+= '<select value='+items.value+'>'+items.value'\n';
+          formInput+= '<select value='+items.value+'>'+items.value+'\n';
           if(items.options){
             for(var i=0; i<items.options.length;i++){
               formInput+='<option value='+items.options[i]+'></option>\n'
@@ -51,7 +51,7 @@ buildForm: function(formItems){
     }
     //if the type is not included in the array an error is thrown
     else{
-      console.log("Oops! It looks like you didnt enter the correct information double check your array to make sure it follows the correct syntax.")
+      console.log("Oops! It looks like you didn't enter the correct information double check your array to make sure it follows the correct syntax.")
     }
   })
   console.log('<form>\n'+formInput+'\n</form>');
