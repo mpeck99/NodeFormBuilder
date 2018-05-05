@@ -8,7 +8,7 @@ const filePaths = [
 const rules = {
     formatter: 'stylish',
 
-    alwaysWarn:true,
+    alwaysWarn:false,
 
     timeout: 5000,
 

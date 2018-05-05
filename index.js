@@ -5,44 +5,45 @@ const Form = require('./src/FormBuilder.js');
 const inputArray = [
   {
     type: 'label',
-    value: 'Full Name'
+    value: 'Full Name',
   },
   {
     type: 'text',
-    name: 'name'
+    name: 'name',
   },
   {
     type: 'email',
-    name: 'email'
+    name: 'email',
 
   },
   {
     type: 'radio',
     name: 'radio button',
-    value: 'Yes'
+    value: 'Yes',
   },
   {
     type: 'select',
     value: 'Choose:',
-    options: ['Red','Blue','Green']
+    options: ['Red', 'Blue', 'Green'],
   },
   {
     type: 'checkbox',
     name: 'checkbox',
-    value: 'Understand the terms'
+    value: 'Understand the terms',
   },
   {
-    type:'submit',
-    value: 'Submit'
+    type: 'submit',
+    value: 'Submit',
   },
   {
     type: 'password',
-    name: "password"
+    name: 'password',
   },
   {
     type: 'button',
-    value: 'Click Here'
-  }
+    value: 'Click Here',
+  },
 ];
-// calling the buildForm function from the FormBuilder.js and passing an array of form items to be built
+// calling the buildForm function from the
+// FormBuilder.js and passing an array of form items to be built
 Form.buildForm(inputArray);
