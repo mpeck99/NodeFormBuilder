@@ -13,10 +13,27 @@ To clone this repo to your local machine navigate to your terminal and run this 
 ```
 git clone git@github.com:mpeck99/NodeFormBuilder.git
 ```
-You will also need to make sure that you have the dependencies needed to run this project
+#### You will also need to make sure that you have the dependencies needed to run this project
 ```
 npm install
 ```
+#### You will need to have mocha install globally on your machine run this in your terminal
+```
+npm i -g mocha
+```
+#### Install mocha-eslint to your developer dependencies
+```
+npm install --save-dev mocha-eslint
+```
+### Testing the AirBnb Style Guide
+```
+npm run styleguide
+```
+### Testing the Code
+```
+npm test
+```
+
 
 ### Form Creation
 The following form inputs can be created 
@@ -46,6 +63,10 @@ options:["Red","Blue","Green"]
 }
 ]
 Form.buildForm(formInputs);
+```
+### To run this on your machine and build a form navigate to the product folder and in the terminal run the following line: 
+```
+node index.js
 ```
 
 ### Examples
