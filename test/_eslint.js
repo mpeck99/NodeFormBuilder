@@ -8,7 +8,7 @@ const filePaths = [
 const rules = {
     formatter: 'stylish',
 
-    alwaysWarn:false,
+    alwaysWarn:true,
 
     timeout: 5000,
 
@@ -16,7 +16,7 @@ const rules = {
 
     strict: true,
 
-    contextName:'eslint'
+    contextName:'AirBnb Eslint Style Guide Tests'
 };
 
 eslint(filePaths,rules);
