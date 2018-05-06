@@ -21,9 +21,11 @@ npm install
 ```
 npm i -g mocha
 ```
-#### Install mocha-eslint to your developer dependencies
+#### Install the developer dependencies to properly run the AirBnB styleguide
 ```
 npm install --save-dev mocha-eslint
+npm install --save-dev eslint-config-airbnb-base
+npm install --save-dev eslint-plugin-import
 ```
 ### Testing the AirBnb Style Guide
 ```
