@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "main": "FormBuilder.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js",
+    "styleguide": "mocha test/_eslint.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node": "^10.0.0"
+    "chai": "^4.1.2"
   },
-  "devDependencies": {},
-  "description": ""
+  "devDependencies": {
+    "mocha-eslint": "^4.1.0"
+  },
+  "description": "This is a simple form builder built from node"
 }
